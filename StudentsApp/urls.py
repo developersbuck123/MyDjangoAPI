@@ -10,4 +10,4 @@ urlpatterns=[
     url(r'^students/$', views.studentsApi),
     url(r'^students/([0-9]+)$', views.studentsApi),
     url(r'^SavePhoto$', views.SavePhoto)
-] + static(settings.PHOTO_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.PHOTO_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
